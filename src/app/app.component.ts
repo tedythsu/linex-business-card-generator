@@ -69,7 +69,7 @@ export class AppComponent {
     const doc = new jsPDF('p', 'px', [532, 319]);
 
     // Front Image
-    doc.addImage('../assets/images/front.png', 'PNG', 0, 0, 319, 532);
+    doc.addImage('./assets/images/front.png', 'PNG', 0, 0, 319, 532);
 
     // Set Text
     // doc.addFileToVFS('microsoft-jhenghei-normal.ttf', CHFontString);
@@ -92,7 +92,7 @@ export class AppComponent {
 
     // Add new page & back image
     doc.addPage();
-    doc.addImage('../assets/images/back.png', 'PNG', 0, 0, 319, 532);
+    doc.addImage('./assets/images/back.png', 'PNG', 0, 0, 319, 532);
     // Save
     doc.save('pdf-export');
 
