@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CHFontString } from '../assets/FontString/CHFontString'
-import { CHFontBoldString } from '../assets/FontString/CHFontBoldString'
+// import { CHFontString } from '../assets/FontString/CHFontString'
+// import { CHFontBoldString } from '../assets/FontString/CHFontBoldString'
 // import { ENFontString } from '../assets/FontString/ENFontString'
 
 // import Swiper core and required modules
@@ -72,16 +72,16 @@ export class AppComponent {
     doc.addImage('../assets/images/front.png', 'PNG', 0, 0, 319, 532);
 
     // Set Text
-    doc.addFileToVFS('microsoft-jhenghei-normal.ttf', CHFontString);
-    doc.addFont('microsoft-jhenghei-normal.ttf', 'microsoft-jhenghei', 'normal');
-    doc.addFileToVFS('microsoft-jhenghei-bold.ttf', CHFontBoldString);
-    doc.addFont('microsoft-jhenghei-bold.ttf', 'microsoft-jhenghei-bold', 'bold');
+    // doc.addFileToVFS('microsoft-jhenghei-normal.ttf', CHFontString);
+    // doc.addFont('microsoft-jhenghei-normal.ttf', 'microsoft-jhenghei', 'normal');
+    // doc.addFileToVFS('microsoft-jhenghei-bold.ttf', CHFontBoldString);
+    // doc.addFont('microsoft-jhenghei-bold.ttf', 'microsoft-jhenghei-bold', 'bold');
 
-    doc.setFont('microsoft-jhenghei-bold', 'bold');
+    // doc.setFont('microsoft-jhenghei-bold', 'bold');
     doc.setFontSize(29);
     doc.text(this.employeeName, 30, 175);
 
-    doc.setFont('microsoft-jhenghei', 'normal');
+    // doc.setFont('microsoft-jhenghei', 'normal');
     doc.setFontSize(22);
     doc.text(this.employeeTitleEn, 30, 198);
     doc.text(this.employeeTitle, 30, 217);
